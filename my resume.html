@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Mary - IT Resume</title>
+    <style>
+        /* CSS Reset & General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        /* Printable Resume Page Styling (A4 Ratio) */
+        .resume-container {
+            width: 210mm;
+            min-height: 297mm;
+            background-color: #ffffff;
+            display: grid;
+            grid-template-columns: 32% 68%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            background-color: #f9e8e8;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .profile-img-container {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            border: 4px solid #ffffff;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #333333;
+            border-bottom: 2px solid #333333;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
+
+        .sidebar p, .sidebar li {
+            font-size: 12px;
+            color: #555555;
+            line-height: 1.6;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+            word-break: break-all;
+        }
+
+        .sidebar ul {
+            list-style-type: square;
+            padding-left: 18px;
+        }
+
+        .sidebar li {
+            margin-bottom: 6px;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            padding: 40px 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .header-name {
+            margin-bottom: 15px;
+        }
+
+        .header-name h1 {
+            font-family: 'Georgia', serif;
+            font-size: 42px;
+            font-weight: normal;
+            line-height: 1;
+            color: #222222;
+        }
+
+        .header-name h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #444444;
+            margin-top: -5px;
+            margin-left: 35px;
+        }
+
+        .header-name h3 {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #666666;
+            margin-top: 15px;
+            border-top: 1px solid #ddd;
+            padding-top: 8px;
+        }
+
+        .entry-block {
+            margin-bottom: 18px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .entry-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #222222;
+        }
+
+        .entry-sub {
+            font-size: 12px;
+            font-style: italic;
+            color: #666666;
+            margin-bottom: 5px;
+        }
+
+        .entry-date {
+            font-size: 11px;
+            color: #777777;
+        }
+
+        .entry-description {
+            font-size: 12px;
+            color: #555555;
+            line-height: 1.5;
+        }
+
+        /* Floating Action Button for Printing */
+        .print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 14px;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.2s ease;
+        }
+
+        .print-btn:hover {
+            background-color: #555555;
+        }
+
+        /* Print Settings to maintain formatting */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                width: 100%;
+                height: 100vh;
+            }
+
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <!-- Sidebar Content -->
+        <aside class="sidebar">
+            <div class="profile-img-container">
+                <img src="https://cdn.phototourl.com/free/2026-09-14-9da48bcc-012c-4198-9a4c-a9ac0ac1d4d9.jpg" alt="Rose Mary">
+            </div>
+
+            <section>
+                <h2 class="section-title">About Me</h2>
+                <p>Enthusiastic and detail-oriented Information Technology student with a strong foundation in software development, web technologies, and database management. Eager to leverage technical skills in a practical environment.</p>
+            </section>
+
+            <section class="contact-info">
+                <h2 class="section-title">Contact</h2>
+                <p><strong>Phone:</strong> +254748064710</p>
+                <p><strong>Email:</strong> rose mary@example.com</p>
+                <p><strong>Website:</strong> www.rose mary.dev</p>
+                <p><strong>Location:</strong> Nairobi, Kenya</p>
+            </section>
+
+            <section>
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>HTML5 / CSS3 / JavaScript</li>
+                    <li>Python & C++</li>
+                    <li>Database Management (SQL)</li>
+                    <li>Network Fundamentals</li>
+                    <li>Git & Version Control</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="section-title">Languages</h2>
+                <ul>
+                    <li>English (Fluent)</li>
+                    <li>Swahili (fluent)</li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header-name">
+                <h1>Rose</h1>
+                <h2>Mary</h2>
+                <h3>Information Technology Student</h3>
+            </header>
+
+            <section>
+                <h2 class="section-title">Work Experience</h2>
+
+                <div class="entry-block">
+                    <div class="entry-header">
+                        <span class="entry-title">IT Intern</span>
+                        <span class="entry-date">2025 - Present</span>
+                    </div>
+                    <div class="entry-sub">Tech Solutions Ltd.</div>
+                    <p class="entry-description">Assisted in maintaining local area networks, troubleshooting hardware and software issues for staff, and supporting web development projects.</p>
+                </div>
+
+                <div class="entry-block">
+                    <div class="entry-header">
+                        <span class="entry-title">Junior Web Developer (Attachment)</span>
+                        <span class="entry-date">2024 - 2025</span>
+                    </div>
+                    <div class="entry-sub">Digital Media Agency</div>
+                    <p class="entry-description">Collaborated with design teams to build responsive frontend interfaces using HTML, CSS, and basic JavaScript.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Education</h2>
+
+                <div class="entry-block">
+                    <div class="entry-header">
+                        <span class="entry-title">Bachelor of Science in Information Technology</span>
+                        <span class="entry-date">2022 - Present</span>
+                    </div>
+                    <div class="entry-sub">Empower Hope</div>
+                    <p class="entry-description">Relevant Coursework: Data Structures, Web Engineering, Database Systems, Computer Networks.</p>
+                </div>
+
+                <div class="entry-block">
+                    <div class="entry-header">
+                        <span class="entry-title">Kenya Certificate of Secondary Education</span>
+                        <span class="entry-date">2018 - 2021</span>
+                    </div>
+                    <div class="entry-sub">musa gitau girls high school</div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Projects</h2>
+
+                <div class="entry-block">
+                    <div class="entry-header">
+                        <span class="entry-title">Student Portal Web App</span>
+                    </div>
+                    <p class="entry-description">Designed and developed a simplified student management portal using HTML, CSS, JavaScript, and MySQL.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Print Button -->
+    <button class="print-btn" onclick="triggerPrint()">Download PDF / Print</button>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        function triggerPrint() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
